@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>射击游戏 - 启动页面</title>
+    <style>
+        body {
+            font-family: 'Microsoft YaHei', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #1a1a1a, #2a2a2a);
+            color: #ffffff;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .container {
+            max-width: 1200px;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 2rem;
+            color: #ff4d4d;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .game-info {
+            background: rgba(0, 0, 0, 0.5);
+            padding: 2rem;
+            border-radius: 10px;
+            margin-bottom: 2rem;
+        }
+
+        .controls {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .control-section {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 1.5rem;
+            border-radius: 8px;
+        }
+
+        h2 {
+            color: #ff4d4d;
+            margin-bottom: 1rem;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            text-align: left;
+        }
+
+        li {
+            margin: 0.5rem 0;
+            padding: 0.5rem;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 4px;
+        }
+
+        .start-button {
+            background: #ff4d4d;
+            color: white;
+            border: none;
+            padding: 1rem 3rem;
+            font-size: 1.5rem;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: transform 0.2s, background 0.2s;
+        }
+
+        .start-button:hover {
+            background: #ff3333;
+            transform: scale(1.05);
+        }
+
+        .requirements {
+            margin-top: 2rem;
+            font-size: 0.9rem;
+            color: #cccccc;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>射击游戏</h1>
+        
+        <div class="game-info">
+            <p>欢迎来到我们的射击游戏！这是一款充满刺激和挑战的第一人称射击游戏。</p>
+        </div>
+
+        <div class="controls">
+            <div class="control-section">
+                <h2>基本操作</h2>
+                <ul>
+                    <li>WASD - 移动</li>
+                    <li>空格 - 跳跃</li>
+                    <li>鼠标移动 - 视角控制</li>
+                    <li>左键点击 - 射击</li>
+                    <li>R键 - 装弹</li>
+                    <li>Shift - 奔跑</li>
+                </ul>
+            </div>
+
+            <div class="control-section">
+                <h2>游戏特性</h2>
+                <ul>
+                    <li>多种武器系统</li>
+                    <li>智能敌人AI</li>
+                    <li>生命值和护甲系统</li>
+                    <li>动态天气效果</li>
+                    <li>成就系统</li>
+                </ul>
+            </div>
+        </div>
+
+        <button class="start-button" onclick="startGame()">开始游戏</button>
+
+        <div class="requirements">
+            <h2>系统要求</h2>
+            <p>操作系统：Windows 10/11, macOS 10.15+</p>
+            <p>处理器：Intel Core i5 或同等性能</p>
+            <p>内存：8GB RAM</p>
+            <p>显卡：NVIDIA GTX 1060 或同等性能</p>
+            <p>存储空间：10GB 可用空间</p>
+        </div>
+    </div>
+
+    <script>
+        function startGame() {
+            // 这里可以添加启动游戏的逻辑
+            alert('游戏启动中...');
+            // 可以添加重定向到游戏场景的代码
+            // window.location.href = 'game.html';
+        }
+    </script>
+</body>
+</html> 
